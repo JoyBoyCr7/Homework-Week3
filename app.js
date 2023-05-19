@@ -8,10 +8,21 @@ $(() => {
     let $h3 = $("<h3>Slytherin</h3>")
     let $h4 = $("<h4>AntMan</h4>").attr("class","dog")
     let $wand = $("<h4>Ronard's wand is wandith</h4>")
+
     $("body").append($h2)
     $("body").append($h3)
     $("body").append($h4)
     $("body").append($wand)
+
+    $("body").append($(`<ul> 
+    <li>butter beer</li> 
+    <li class = secret>invisibility cloak </li> 
+    <li class = secret>magic map</li> 
+    <li class = secret>time turner </li> 
+    <li class = dog>leash</li> 
+    <li> Bertie Bott's Every Flavor [Jelly] Beans</li> 
+    </ul>`).attr("storage","trunk"))
+
 });
 
 
