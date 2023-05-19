@@ -76,6 +76,19 @@ $(() => {
     });
     $(".dog").show()
     
+    $(".secret").hide().delay(2500)
+    $(".secret").show("slow")
+
+    let listItems3 = $(".dog");
+    listItems3.each(function(idx, li) {
+        if ($(li).text() === "leash"){
+            $(li).addClass("cabbage")
+            $(li).removeClass("cabbage")
+
+        }
+    });
+
+    
 
 });
 
