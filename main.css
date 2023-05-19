@@ -1,5 +1,5 @@
 body {
-    background-color: pink;
+    background-color: wheat;
     text-align: center;
     
 }
@@ -13,3 +13,9 @@ body {
 ul{
     list-style-type: none;
 }
+table, th, td {
+    border: 1px solid;
+    border-color: grey;
+    margin: auto;
+    
+  }

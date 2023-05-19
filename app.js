@@ -23,6 +23,41 @@ $(() => {
     <li> Bertie Bott's Every Flavor [Jelly] Beans</li> 
     </ul>`).attr("storage","trunk"))
 
+    $("body").append("<h5>Spring 2017</h5>")
+
+    $("body").append(`<table>
+        <thead>
+            <tr>
+                <th >Day</th>
+                <th >Classes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>Herbology, Divination, History of Magic, Charms, Potions</td>
+            </tr> 
+            <tr>
+                <td>Tuesday</td>
+                <td>Herbology, Divination, History of Magic, Charms, Potions</td>
+            </tr> 
+            <tr>
+                <td>Wednesday</td>
+                <td>Herbology, Divination, History of Magic, Charms, Potions</td>
+            </tr> 
+            <tr>
+                <td>Thursday</td>
+                <td>Herbology, Divination, History of Magic, Charms, Potions</td>
+            </tr> 
+            <tr>
+                <td>Friday</td>
+                <td>Herbology, Divination, History of Magic, Charms, Potions</td>
+            </tr>
+        </tbody>
+    </table>`)
+
+
+
 });
 
 
