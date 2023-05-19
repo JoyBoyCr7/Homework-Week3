@@ -23,7 +23,7 @@ $(() => {
     <li> Bertie Bott's Every Flavor [Jelly] Beans</li> 
     </ul>`).attr("storage","trunk"))
 
-    $("body").append("<h5>Spring 2017</h5>")
+    $("body").append("<h5 class = year>Spring 2017</h5>")
 
     $("body").append(`<table>
         <thead>
@@ -65,7 +65,7 @@ $(() => {
         }
     });
 
-    $("ul").prepend("<li class = new>The New Wand</>")
+    $("h4").append("<h4 class = new>The New Wand</h4>")
     $(".new").css("color","indigo")
 
     let listItems2 = $(".dog");
@@ -87,8 +87,11 @@ $(() => {
 
         }
     });
+    $(".year").text("Fall 2018")
 
+    $("ul").prepend("<li>Butter beer</li>")
     
+    $("ul").attr("storage","chest")
 
 });
 
