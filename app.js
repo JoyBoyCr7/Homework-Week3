@@ -7,7 +7,7 @@ $(() => {
     let $h2 = $("<h2>Ronard Nyongkah</h2>")
     let $h3 = $("<h3>Slytherin</h3>")
     let $h4 = $("<h4>AntMan</h4>").attr("class","dog")
-    let $wand = $("<h4>Ronard's wand is wandith</h4>")
+    let $wand = $("<h4 class= wand>Ronard's wand is wandith</h4>")
 
     $("body").append($h2)
     $("body").append($h3)
@@ -56,7 +56,26 @@ $(() => {
         </tbody>
     </table>`)
 
+    $(".wand").remove()
 
+    let listItems = $("ul li");
+    listItems.each(function(idx, li) {
+        if ($(li).text() === "butter beer"){
+            $(li).remove()
+        }
+    });
+
+    $("ul").prepend("<li class = new>The New Wand</>")
+    $(".new").css("color","indigo")
+
+    let listItems2 = $(".dog");
+    listItems2.each(function(idx, li) {
+        if ($(li).text() === "AntMan"){
+            $(li).hide()
+        }
+    });
+    $(".dog").show()
+    
 
 });
 
